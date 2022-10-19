@@ -1,0 +1,36 @@
+Этапы создания проекта
+
+1. создаём виртуальное окружение
+python -m venv <название_окружения>
+
+2. создаём файл requirements.txt
+и указываем все зависимости
+
+3. активируем виртуальное окружение
+Linux|MacOS
+source <название_окружения>/bin/activate
+
+Windows(GitBash)
+source <название_окружения>/Scripts/activate
+
+Windows (PS, CMD)
+<название_окружения>/Scripts/activate.bat
+
+4. устанавливаем зависимости
+pip install -r requirements.txt
+
+5. создаём Django-проект
+django-admin startproject <название_проекта> .
+
+6.создаём приложения
+python manage.py startapp <название_приложения>
+
+7. регистрируем приложения в файле настроек
+
+settings.py -> INSTALLED_APPS
+
+8. создаём БД
+python manage.py runserver
+
+9. запускаем сервер
+python manage.py runserver
